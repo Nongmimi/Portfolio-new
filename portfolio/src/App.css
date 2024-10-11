@@ -1,0 +1,32 @@
+.main-container {
+  height: 100vh;
+  background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
+}
+
+.title {
+  font-size: 70px; /* กำหนดขนาดฟอนต์ให้ใหญ่ขึ้น */
+  color: #974141; /* กำหนดสีของตัวอักษร */
+  text-align: center; /* จัดให้อยู่กลาง */
+  margin: 20px 0; /* ระยะห่างด้านบนและล่าง */
+}
+
+.header {
+  display: flex;                  /* ใช้ flexbox */
+  /* background-color: #333;        สีพื้นหลัง */
+  padding: 5px 20px;            /* ระยะห่างภายใน */
+  justify-content: space-between;  
+}
+
+.header-button {
+  background-color: transparent;  /* ไม่มีพื้นหลัง */
+  color: rgb(0, 0, 0);                  /* สีตัวอักษร */
+  border: none;                  /* ไม่มีกรอบ */
+  padding: 10px 15px;            /* ระยะห่างภายในปุ่ม */
+  margin-right: 20px;            /* ระยะห่างระหว่างปุ่ม */
+  cursor: pointer; 
+  font-size: 20px;
+}
+
+.header-button i {
+  margin-right: 5px; /* ช่องว่างระหว่างไอคอนกับข้อความ */ 
+}
