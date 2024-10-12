@@ -1,34 +1,34 @@
 .main-container {
   height: 100vh;
   background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
+  display: flex;
+  flex-direction: row;
 }
 
-.header {
-  display: flex;                  /* ใช้ flexbox */
-  background-color: #333;       
-  padding: 0px 20px;            /* ระยะห่างภายใน */
-  justify-content: space-between;  
-  height: 50px;
-  
+.sidebar {
+  position: fixed;               /* ทำให้ sidebar อยู่ทางซ้ายตลอดเวลา */                        /* ติดขอบบน */
+  width: 30px;                  /* กำหนดความกว้างของ sidebar */
+  height: 100%;                  /* ความสูงเต็มจอ */
+  background-color: #333;         /* สีพื้นหลังของ sidebar */
+  padding: 20px;                 /* ระยะห่างภายใน */
+  display: flex;
+  flex-direction: column;        /* ให้ปุ่มใน sidebar เรียงลงล่าง */
+  justify-content: space-between;   /* เริ่มจากด้านบน */
+  text-align: center; 
 }
 
-.header-title {
-  font-size: 30px; /* กำหนดขนาดฟอนต์ให้ใหญ่ขึ้น */
-  color: #ffffff; /* กำหนดสีของตัวอักษร */
-  text-align: center; /* จัดให้อยู่กลาง */
+.sidebar-title {
+  font-size: 30px;               /* กำหนดขนาดฟอนต์ให้ใหญ่ขึ้น */
+  color: #ffffff;                /* กำหนดสีของตัวอักษร */   
+  text-align: left;            /* จัดให้อยู่กลาง */
 }
 
 
-.header-button {
+.sidebar-button {
   background-color: transparent;  /* ไม่มีพื้นหลัง */
   color: rgb(255, 255, 255);                  /* สีตัวอักษร */
   border: none;                  /* ไม่มีกรอบ */
-  margin-right: 20px;            /* ระยะห่างระหว่างปุ่ม */
   cursor: pointer; 
   font-size: 20px;
   text-align: center; /* จัดให้อยู่กลาง */
-}
-
-.header-button i {
-  margin-right: 5px; /* ช่องว่างระหว่างไอคอนกับข้อความ */ 
 }

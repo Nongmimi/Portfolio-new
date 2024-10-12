@@ -1,0 +1,38 @@
+.menu{
+    display: flex;
+    justify-content: space-between; /* จัดตำแหน่งให้กระจายซ้าย-ขวา */
+    align-items: flex-start; /* จัดให้อยู่ด้านบน */
+    padding: 20px;
+    text-align: left;
+    width: 100%; /* ใช้พื้นที่เต็มหน้าจอ */
+    max-width: 1200px; /* จำกัดความกว้างสูงสุดของคอนเทนเนอร์ */
+    margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 20;
+}
+.menu h1 {
+    margin-top: 20;
+    font-family: fantasy;
+}
+.menu-button{
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 10px 0;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;    
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    text-align: center; /* จัดให้อยู่กลาง */ 
+    width: 250px;
+    height: 55px;
+    margin-left: 100px;
+}
+.menu-button:hover {
+    background-color: #b454da;
+    color: black;
+}

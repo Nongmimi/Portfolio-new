@@ -1,20 +1,20 @@
 import React from 'react';
 import './App.css'; 
 
-function Header() {
+function Sidebar() {
     return (
-      <div className="header">
-        <button className="header-button">
+      <div className="sidebar">
+        <button className="sidebar-button">
           <i className="fa fa-home"></i>
         </button>
-        <button className="header-button">
+        <button className="sidebar-button">
           PORTFOLIO
         </button>
-        <button className="header-button">
-          <i className="fa fa-sign-out-alt"></i>
+        <button className="sidebar-button">
+          <i className="fa fa-sign-out"></i>
         </button>
       </div>
     );
   }
 
-export default Header;
+export default Sidebar;
