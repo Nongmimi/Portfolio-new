@@ -5,13 +5,13 @@ function Header() {
     return (
       <div className="header">
         <button className="header-button">
-          <i className="fas fa-home"></i> {/* Home icon */}
+          <i className="fa fa-home"></i>
         </button>
         <button className="header-button">
           PORTFOLIO
         </button>
         <button className="header-button">
-          <i className="fas fa-sign-out-alt"></i> {/* Exit icon */}
+          <i className="fa fa-sign-out-alt"></i>
         </button>
       </div>
     );
