@@ -1,0 +1,39 @@
+.about-me {
+    display: flex;
+    align-items: left;             /* จัดให้อยู่กลาง */
+    height: 100vh;                  /* ความสูงเต็มจอ */
+    display: flex;
+    text-align: left;
+    width: 100%; /* ใช้พื้นที่เต็มหน้าจอ */
+    max-width: 1200px; /* จำกัดความกว้างสูงสุดของคอนเทนเนอร์ */
+    margin-left: 130px;
+    flex-direction: column;         /* เรียงเนื้อหาในแนวดิ่ง */
+}
+.about-me-header {
+    display: flex;                 /* ใช้ Flexbox เพื่อจัดเรียงในแนวนอน */
+    align-items: center;           /* จัดให้อยู่กลางในแนวตั้ง */
+    font-size: 28px;
+}
+
+.about-me-icon {
+    font-size: 50px;               /* ขนาดไอคอน */
+    margin-left: 30px;            /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    margin-top: 15px;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: left;            /* จัดไอคอนกับข้อความให้อยู่กลาง */
+    flex-direction: column;
+    margin-left: 40px;
+    font-size: 18px;               /* ขนาดฟอนต์พื้นฐาน */
+}
+.large-text {
+    font-size: 22px;               /* ขนาดฟอนต์ที่ใหญ่กว่า */
+    font-weight: bold;             /* ทำให้ตัวหนา */
+    margin-left: 350px;
+}
+.large-text1 {
+    font-size: 22px;               /* ขนาดฟอนต์ที่ใหญ่กว่า */
+    font-weight: bold;             /* ทำให้ตัวหนา */
+}

@@ -7,22 +7,24 @@
 
 .sidebar {
   position: fixed;               /* ทำให้ sidebar อยู่ทางซ้ายตลอดเวลา */                        /* ติดขอบบน */
-  width: 30px;                  /* กำหนดความกว้างของ sidebar */
+  width: 40px;                  /* กำหนดความกว้างของ sidebar */
   height: 100%;                  /* ความสูงเต็มจอ */
   background-color: #333;         /* สีพื้นหลังของ sidebar */
   padding: 20px;                 /* ระยะห่างภายใน */
   display: flex;
   flex-direction: column;        /* ให้ปุ่มใน sidebar เรียงลงล่าง */
-  justify-content: space-between;   /* เริ่มจากด้านบน */
-  text-align: center; 
+  justify-content: space-between;
 }
 
-.sidebar-title {
-  font-size: 30px;               /* กำหนดขนาดฟอนต์ให้ใหญ่ขึ้น */
-  color: #ffffff;                /* กำหนดสีของตัวอักษร */   
-  text-align: left;            /* จัดให้อยู่กลาง */
+.rotate-text {
+  transform: rotate(270deg);  /* หมุนข้อความ 90 องศา */
+  transform-origin: right top; /* กำหนดจุดหมุนที่มุมบนซ้าย */
+  white-space: nowrap;       /* ป้องกันไม่ให้ข้อความแตกบรรทัด */
+  color: white;                  /* สีของข้อความใน sidebar */
+  font-size: 27px;               /* ขนาดของฟอนต์ */
+  margin-top: 190px;           /* เพิ่มระยะห่างด้านล่าง */
+  margin-right: 30px;  
 }
-
 
 .sidebar-button {
   background-color: transparent;  /* ไม่มีพื้นหลัง */
@@ -31,4 +33,33 @@
   cursor: pointer; 
   font-size: 20px;
   text-align: center; /* จัดให้อยู่กลาง */
+  margin-bottom: 40px;
+}
+
+.sidebar-button1{
+  background-color: transparent;  /* ไม่มีพื้นหลัง */
+  color: rgb(255, 255, 255);                  /* สีตัวอักษร */
+  border: none;                  /* ไม่มีกรอบ */
+  cursor: pointer; 
+  font-size: 18px;
+  text-align: center; /* จัดให้อยู่กลาง */
+  margin: 10px 0;                /* ระยะห่างระหว่างปุ่ม */
+}
+
+.sidebar-button1 .icon{
+  font-size: 20px;               /* ขนาดไอคอนที่ต้องการ */
+  margin-right: 8px;             /* ระยะห่างระหว่างไอคอนและข้อความ */
+}
+
+.middle-buttons {
+  display: flex;                 /* ใช้ flexbox */
+  flex-direction: column;        /* เรียงปุ่มในแนวดิ่ง */
+  align-items: center;           /* จัดให้อยู่กลางในแนวนอน */
+  margin-bottom: 35px;
+}
+
+.middle-buttons h7{
+  font-size: 10px;
+  text-align: center;
+  margin-left: 25px;
 }
