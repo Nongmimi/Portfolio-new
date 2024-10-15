@@ -1,39 +1,85 @@
-.about-me {
+.ground {
     display: flex;
     align-items: left;             /* จัดให้อยู่กลาง */
     height: 100vh;                  /* ความสูงเต็มจอ */
+    width: 100%;
     display: flex;
     text-align: left;
     width: 100%; /* ใช้พื้นที่เต็มหน้าจอ */
-    max-width: 1200px; /* จำกัดความกว้างสูงสุดของคอนเทนเนอร์ */
-    margin-left: 130px;
     flex-direction: column;         /* เรียงเนื้อหาในแนวดิ่ง */
+    background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
 }
-.about-me-header {
+
+.header {
     display: flex;                 /* ใช้ Flexbox เพื่อจัดเรียงในแนวนอน */
     align-items: center;           /* จัดให้อยู่กลางในแนวตั้ง */
     font-size: 28px;
+    margin-left: 130px;
 }
 
-.about-me-icon {
+.icon1 {
     font-size: 50px;               /* ขนาดไอคอน */
     margin-left: 30px;            /* ระยะห่างระหว่างไอคอนกับข้อความ */
     margin-top: 15px;
 }
 
 .about-me-content {
-    display: flex;
     align-items: left;            /* จัดไอคอนกับข้อความให้อยู่กลาง */
     flex-direction: column;
-    margin-left: 40px;
+    margin-left: 170px;
     font-size: 18px;               /* ขนาดฟอนต์พื้นฐาน */
 }
 .large-text {
     font-size: 22px;               /* ขนาดฟอนต์ที่ใหญ่กว่า */
     font-weight: bold;             /* ทำให้ตัวหนา */
-    margin-left: 350px;
+    margin-left: 520px;
 }
 .large-text1 {
     font-size: 22px;               /* ขนาดฟอนต์ที่ใหญ่กว่า */
     font-weight: bold;             /* ทำให้ตัวหนา */
+}
+
+.skills-content {
+    display: flex; /* ใช้ flexbox สำหรับจัดเรียงการ์ด */
+    gap: 100px; /* เพิ่มระยะห่างระหว่างการ์ด */
+    margin-left: 200px; 
+}
+  
+.flipper {
+    position: relative;
+    perspective: 1000px; /* ให้มุมมองสามมิติ */
+    width: 550px; /* ความกว้างของการ์ด */
+    height: 500px; /* ความสูงของการ์ด */
+    transition: transform 1.3s;
+    transform-style: preserve-3d;
+}
+
+.flipper .front,.flipper .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* ซ่อนด้านหลัง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.flipper .front {
+    background-color: #000000; /* สีของด้านหน้า */
+    font-size: 50px;
+    text-align: center;
+}
+
+.flipper .back {
+    background-color: #e4cee6; /* สีของด้านหลัง */
+    transform: rotateY(180deg); /* พลิกด้านหลัง */
+    color: #000;
+}
+
+/* พลิกการ์ดเมื่อ hover */
+.flipped{
+    transform: rotateY(180deg);
 }

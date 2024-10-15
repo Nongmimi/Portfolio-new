@@ -5,6 +5,11 @@
   flex-direction: row;
 }
 
+.content{
+  font-size: 50px;
+  margin-left: 150px;
+}
+
 .sidebar {
   position: fixed;               /* ทำให้ sidebar อยู่ทางซ้ายตลอดเวลา */                        /* ติดขอบบน */
   width: 40px;                  /* กำหนดความกว้างของ sidebar */
@@ -24,6 +29,7 @@
   font-size: 27px;               /* ขนาดของฟอนต์ */
   margin-top: 190px;           /* เพิ่มระยะห่างด้านล่าง */
   margin-right: 30px;  
+  
 }
 
 .sidebar-button {

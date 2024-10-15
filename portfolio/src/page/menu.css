@@ -1,18 +1,18 @@
-.menu{
+.menu {
     display: flex;
-    justify-content: space-between; /* จัดตำแหน่งให้กระจายซ้าย-ขวา */
-    padding: 20px;
     text-align: left;
-    width: 100%; /* ใช้พื้นที่เต็มหน้าจอ */
-    max-width: 1200px; /* จำกัดความกว้างสูงสุดของคอนเทนเนอร์ */
-    margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+    width: 100%;
     flex-direction: column;
-    margin-left: 150px;
+    height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
+    background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
 }
+
 .menu h1 {
     margin-top: 30px;
-    font-family: fantasy;
-    font-size: 70px;
+    font-family: "Rubik Vinyl", system-ui;
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: 60px;
 }
 .menu-button{
     display: flex;
@@ -29,7 +29,7 @@
     text-align: center; /* จัดให้อยู่กลาง */ 
     width: 340px;
     height: 75px;
-    margin-left: 100px;
+    margin-left: 250px;
 }
 .menu-button:hover {
     background-color: #b454da;
