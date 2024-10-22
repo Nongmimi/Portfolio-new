@@ -1,13 +1,64 @@
 .main-container {
   height: 100vh;
-  background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
+  background-color: rgb(197, 145, 194); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
   display: flex;
   flex-direction: row;
 }
 
 .content{
-  font-size: 50px;
+  font-size: 70px;
   margin-left: 150px;
+  /* font-family: "Edu AU VIC WA NT Guides", cursive; */
+  /* font-family: "Londrina Sketch", sans-serif; */
+  /* font-family: "Londrina Shadow", sans-serif; */
+  font-family: "Berkshire Swash", serif;
+  /* font-family: "Fredericka the Great", serif; */
+  /* font-family: "Rye", serif; */
+  /* font-family: "Love Ya Like A Sister", cursive; */
+  /* font-family: "Spicy Rice", serif; */
+  /* font-family: "Rampart One", sans-serif; */
+  /* font-family: "Finger Paint", sans-serif; */
+  /* font-family: "Vast Shadow", serif; */
+  /* font-family: "Henny Penny", system-ui;  good */
+  /* font-family: "Nosifer", sans-serif; */
+  /* font-family: "Caesar Dressing", system-ui; */
+  /* font-family: "Rubik Doodle Shadow", system-ui; */
+  /* font-family: "Rubik Vinyl", system-ui; */
+  color: #000000;
+}
+.main-button{
+  width: 500px;
+  height: 120px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: 886px;
+  margin-top: 5px;
+  background-color: #333;
+  border-color: #000000;
+  border-left-width: 8px;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+  flex-direction: row;
+}
+.main-button i{
+  font-size: 60px;
+  color: rgb(223, 218, 223);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.barcode{
+  font-family: "Libre Barcode 39 Text", system-ui;
+  font-size: 30px;
+  white-space: nowrap; 
+  padding: 20px; 
+  position: fixed;
+  bottom: 20px; /* ระยะห่างจากขอบล่างของหน้าจอ */
+  left: 125px; /* ระยะห่างจากขอบซ้ายของหน้าจอ */
+  color: #3f3f3f;
+  font-weight: 300;
 }
 
 .sidebar {
@@ -28,8 +79,8 @@
   color: white;                  /* สีของข้อความใน sidebar */
   font-size: 27px;               /* ขนาดของฟอนต์ */
   margin-top: 190px;           /* เพิ่มระยะห่างด้านล่าง */
-  margin-right: 30px;  
-  
+  margin-right: 25px;  
+  font-family: "Rubik Doodle Shadow", system-ui;
 }
 
 .sidebar-button {
@@ -54,7 +105,6 @@
 
 .sidebar-button1 .icon{
   font-size: 20px;               /* ขนาดไอคอนที่ต้องการ */
-  margin-right: 8px;             /* ระยะห่างระหว่างไอคอนและข้อความ */
 }
 
 .middle-buttons {
@@ -69,3 +119,4 @@
   text-align: center;
   margin-left: 25px;
 }
+

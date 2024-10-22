@@ -22,8 +22,9 @@ function App() {
     <div className="main-container">
       <div className="content">
         <h1>PORTFOLIO</h1>
-        <button onClick={goToMenu}>next</button> {/* เมื่อกดปุ่ม จะไปยังหน้า /menu */}
+        <button className='main-button' onClick={goToMenu}><i class="fa-solid fa-fingerprint"></i></button> {/* เมื่อกดปุ่ม จะไปยังหน้า /menu */}
       </div>
+      <div className="barcode">worawaran jaiklang</div>
     </div>
   );
 }

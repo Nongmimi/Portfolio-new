@@ -20,14 +20,18 @@ function Figma() {
                 <h1>Figma</h1>
                 <i className="fa fa-id-card icon1"></i>
             </div>
-            <button className="project-button" onClick={goToHW}>
-                    <i className="fa fa-home"></i>
-                    Hardware
-                </button>
-                <button className="project-button" onClick={goTocom}>
-                    <i className="fa fa-home"></i>
-                    Computer
-                </button>
+            <button className="cfh-button1" onClick={goTocom}>
+                <div className="left">
+                    <i class="fa fa-arrow-circle-left"></i>
+                        <span>Computer</span>
+                </div> 
+            </button>
+            <button className="cfh-button2" onClick={goToHW}>
+                <div className="right">
+                        <span>Hardware</span>
+                        <i className="fa fa-arrow-circle-right"></i>
+                </div>
+            </button>
             </div>
         </div>
     );

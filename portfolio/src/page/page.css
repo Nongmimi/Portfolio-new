@@ -1,3 +1,4 @@
+/* ALL */
 .ground {
     display: flex;
     align-items: left;             /* จัดให้อยู่กลาง */
@@ -15,36 +16,166 @@
     align-items: center;           /* จัดให้อยู่กลางในแนวตั้ง */
     font-size: 28px;
     margin-left: 130px;
+    font-family: "Rubik Doodle Shadow", system-ui;
 }
 
 .icon1 {
     font-size: 50px;               /* ขนาดไอคอน */
     margin-left: 30px;            /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    margin-top: 10px;
+}
+
+
+/* Aboutme */
+.about-me-content {      
+    display: flex;  
+    flex-direction: column;
+    margin-left: 320px;
+    background-color: #c2a4d8;
+    width: 950px;
+    height: 500px;
+    position: relative; /* ใช้ position relative */
+    border-radius: 30px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5); /* เพิ่มเงารอบกรอบ */
+}
+.about-me-top {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.about-me-top i {
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    margin-right: 15px;
+    margin-left: 25px;
     margin-top: 15px;
 }
-
-.about-me-content {
-    align-items: left;            /* จัดไอคอนกับข้อความให้อยู่กลาง */
+.icon-top{
+    width: 70px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.about-me-top-text {
+    line-height: 1.4; /* ปรับระยะห่างระหว่างบรรทัดให้สวยงาม */
+    color: rgb(0, 0, 0); 
+    display: flex;
     flex-direction: column;
-    margin-left: 170px;
-    font-size: 18px;               /* ขนาดฟอนต์พื้นฐาน */
 }
-.large-text {
-    font-size: 22px;               /* ขนาดฟอนต์ที่ใหญ่กว่า */
-    font-weight: bold;             /* ทำให้ตัวหนา */
-    margin-left: 520px;
+.text1, .text2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    display: block; /* ทำให้ข้อความแต่ละส่วนเป็นบรรทัดใหม่ */
+    justify-content: space-between; /* จัดข้อความให้อยู่ซ้ายขวา */
 }
-.large-text1 {
-    font-size: 22px;               /* ขนาดฟอนต์ที่ใหญ่กว่า */
-    font-weight: bold;             /* ทำให้ตัวหนา */
+.text1 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.english{
+    margin-left: 55px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.id-number{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.barcode-me{
+    font-family: "Libre Barcode 39 Extended", system-ui;
+    font-size: 53px;
+    background-color: #d6d2d2;
+    width: 370px;
+    height: 30px;
+    white-space: nowrap;
+    transform: rotate(270deg); /* หมุนบาร์โค้ด */
+    position: absolute;
+    left: 40px; /* ให้อยู่ซ้ายสุด */
+    top: 92%; /* จัดตำแหน่งให้อยู่กลาง */
+    transform-origin: left center; /* กำหนดจุดหมุน */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+.about-me-info{
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* ระยะห่างระหว่างแต่ละบรรทัด */
+    margin-top: 25px;
+}
+.text-info{
+    display: flex;
+    align-items: center;
+}
+.text-1{
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 25px;
+}
+.text-21{
+    font-size: 23px;
+    font-weight: 500;
+    padding-right: 100px;
+}
+.text-2{
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 100px;
+}
+.text-info .text-1,
+.text-info .text-2,
+.text-info .text-21 {
+    display: inline-block;
+    margin: 0px; /* ยกเลิก margin เพื่อให้ข้อความติดกัน */
+}
+.line-info {
+    display: flex; /* ใช้ Flexbox */
+    align-items: center; /* จัดแนวในแนวตั้งให้ตรงกัน */
+}
+.about-me-hobby{
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.hobby-icon{
+    display: flex;
+    gap: 55px;
+    margin-left: 60px;
+    margin-top: 4px;
+}
+.hobby{
+    width: 45px;
+}
+.photo-me {
+    flex-shrink: 0; /* ป้องกันไม่ให้รูปภาพหดตัว */
+    width: 150px; /* ขนาดที่ต้องการ */
+    height: 200px; /* ขนาดที่ต้องการ */
+    margin-left: 650px;
+    position: absolute;
+}
+.profile-me {
+    width: 100%; /* ทำให้รูปภาพขยายเต็มพื้นที่กล่อง */
+    height: auto; /* ทำให้สูงอัตโนมัติตามสัดส่วน */
+    border-radius: 10px; /* ทำมุมมนให้กับรูป */
 }
 
+
+/* Skill */
 .skills-content {
     display: flex; /* ใช้ flexbox สำหรับจัดเรียงการ์ด */
     gap: 100px; /* เพิ่มระยะห่างระหว่างการ์ด */
     margin-left: 200px; 
 }
-  
 .flipper {
     position: relative;
     perspective: 1000px; /* ให้มุมมองสามมิติ */
@@ -53,8 +184,7 @@
     transition: transform 1.3s;
     transform-style: preserve-3d;
 }
-
-.flipper .front,.flipper .back {
+.flipper .front,.flipper .back ,.flipper .back1{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -66,20 +196,259 @@
     color: white;
     border-radius: 10px;
 }
-
 .flipper .front {
     background-color: #000000; /* สีของด้านหน้า */
     font-size: 50px;
     text-align: center;
 }
-
 .flipper .back {
-    background-color: #e4cee6; /* สีของด้านหลัง */
+    background-color: #ffffff82; /* สีของด้านหลัง */
     transform: rotateY(180deg); /* พลิกด้านหลัง */
-    color: #000;
+    color: #000000;
+    flex-direction: row;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5); /* เพิ่มเงารอบกรอบ */
+}
+.back-text{
+    font-size: 15px;
+    margin-bottom: 10px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+}
+.back i{
+    font-size: 70px;
+    margin-top: 30px;
+}
+.one, .two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.one {
+    margin-right: 150px;
+    margin-top: 10px;
+}
+.two{
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.flipped{
+    transform: rotateY(180deg);
+}
+.skill-img{
+    width: 100px;
+    margin-top: 15px;
+}
+.one1, .two2, .three3, .four4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-left: 15px;
+    gap: 50px;
+}
+.flipper .back1 {
+    background-color: #ffffff82; /* สีของด้านหลัง */
+    transform: rotateY(180deg); /* พลิกด้านหลัง */
+    color: #000000;
+    flex-direction: column;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5); /* เพิ่มเงารอบกรอบ */
+    text-align: center;  /* จัดข้อความและรูปให้อยู่ตรงกลาง */
+}
+.skill-img1{
+    width: 70px;
+    height: auto;         /* ปรับตามสัดส่วนของรูปภาพ */
+}
+.back-text1 {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;    
+    font-size: 20px;             
+    margin-bottom: 20px;         
+    text-align: left;            
+    width: 100%;           
+    margin-left: 70px;
+}
+.one1, .two2, .three3 {
+    display: flex;       /* ใช้ flexbox จัดการรูปภาพ */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    /* flex-wrap: wrap;     ทำให้รูปภาพอยู่ในหลายบรรทัดถ้าจอไม่พอ */
+    margin-bottom: 20px; /* เพิ่มช่องว่างระหว่างแต่ละบรรทัด */
 }
 
-/* พลิกการ์ดเมื่อ hover */
-.flipped{
+
+
+.project-content{
+    margin-left: 180px;
+}  
+.project-content-top{
+    margin-left: 200px;
+    display: flex;
+    gap: 180px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+.project-content-bottom{
+    margin-left: 430px;
+}
+.project-button{
+    border-radius: 50px; /* ทำให้ปุ่มเป็นวงกลม */
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-button i{
+    font-size: 140px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.project-button img {
+    width: 150px; /* กำหนดขนาดของรูปภาพ */
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.project-button:hover{
+    background-color: rgb(179, 181, 183);
+}
+.cfh-button1 {
+    position: fixed;
+    bottom: 30px; /* ระยะห่างจากขอบล่างของหน้าจอ */
+    left: 250px; /* ระยะห่างจากขอบซ้ายของหน้าจอ */
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #cdcdcd;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    border: none;
+}
+.cfh-button2 {
+    position: fixed;
+    bottom: 30px; /* ระยะห่างจากขอบล่างของหน้าจอ */
+    right: 200px; /* ระยะห่างจากขอบซ้ายของหน้าจอ */
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #cdcdcd;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    border: none;
+}
+.cfh-button1:hover,
+.cfh-button2:hover{
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: none;
+}
+.cfh-button1 i,
+.cfh-button2 span {
+    margin-right: 10px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+}
+
+
+/* Education */
+.education-content{
+    display: flex;  
+    flex-direction: row;
+    margin-left: 220px;
+}
+.school{
+    width: 200px;
+}
+.school-text{
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.school-text_ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-edu{
+    display: flex;  
+    flex-direction: column;
+}
+.text-edu{
+    display: flex;  
+    flex-direction: column;
+}
+.school-text01{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;  
+    flex-direction: column;
+}
+.school-text10{
+    margin-top: 95px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;  
+    flex-direction: column;
+}
+.school-text1, .school-text11{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.school-text101, .school-text111{
+    margin-left: 50px;
+    margin-top: 8px;
+    font-size: 15px;
+}
+.transcript {
+    width: 100%; /* ทำให้รูปภาพขยายเต็มพื้นที่กล่อง */
+    height: auto; /* ทำให้สูงอัตโนมัติตามสัดส่วน */
+}
+.flipper_ {
+    position: relative;
+    perspective: 1000px; /* ให้มุมมองสามมิติ */
+    width: 350px; /* ความกว้างของการ์ด */
+    height: 50px; /* ความสูงของการ์ด */
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    margin-left: 120px;
+    margin-top: 200px;
+    flex-shrink: 0; /* ป้องกันไม่ให้รูปภาพหดตัว */
+    width: 350px; /* ขนาดที่ต้องการ */
+    height: 50px; /* ขนาดที่ต้องการ */
+}
+
+.flipper_ .photo-tran-front {
+    position: absolute;
+    backface-visibility: hidden; /* ซ่อนด้านหลัง */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.flipper_ .photo-tran-back {
+    position: absolute;
+    backface-visibility: hidden; /* ซ่อนด้านหลัง */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transform: rotateY(180deg); /* พลิกด้านหลัง */
+}
+.flipped_{
     transform: rotateY(180deg);
 }

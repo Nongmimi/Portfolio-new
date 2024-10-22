@@ -62,7 +62,7 @@ function Sidebar() {
                       <h7 className="rotate-text">About ME</h7>
                     </button>
                     <button className="sidebar-button1">
-                      <i className="fa fa-address-book icon" onClick={goToSkills}></i>
+                      <i class="fa-solid fa-user-gear" onClick={goToSkills}></i>
                       <h7 className="rotate-text">Skills</h7>
                     </button>
                     <button className="sidebar-button1">
@@ -70,7 +70,7 @@ function Sidebar() {
                       <h7 className="rotate-text">Education</h7>
                     </button>
                     <button className="sidebar-button1">
-                      <i className="fa fa-file icon" onClick={goToProj}></i>
+                      <i className="fa fa-solid fa-folder" onClick={goToProj}></i>
                       <h7 className="rotate-text">Projects</h7>
                     </button>
                   </div>

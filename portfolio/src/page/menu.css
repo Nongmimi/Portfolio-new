@@ -1,22 +1,25 @@
 .menu {
     display: flex;
-    text-align: left;
     width: 100%;
     flex-direction: column;
     height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
     background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
 }
 
-.menu h1 {
-    margin-top: 30px;
-    font-family: "Rubik Vinyl", system-ui;
+.menu p {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 700;
     font-size: 50px;
     margin-left: 150px;
     margin-top: 60px;
+    margin-bottom: 20px;
 }
-.menu-button{
+.menu-button1,
+.menu-button2,
+.menu-button3,
+.menu-button4{
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 35px;
     font-size: 23px;
@@ -29,9 +32,119 @@
     text-align: center; /* จัดให้อยู่กลาง */ 
     width: 340px;
     height: 75px;
-    margin-left: 250px;
+    font-family: "Rubik Scribble", system-ui;
 }
-.menu-button:hover {
+.menu-button1:hover,
+.menu-button2:hover,
+.menu-button3:hover,
+.menu-button4:hover{
     background-color: #b454da;
     color: black;
+}
+
+.menu-button1 {
+    margin-left: 250px;
+    margin-bottom: 25px;
+    position: relative; /* ทำให้ปุ่มเป็นตำแหน่งอ้างอิงสำหรับ popup */
+}
+.popup-container1 {
+    background-color: rgba(255, 255, 255, 0.5); /* สีเทาอ่อนที่มีความโปร่งใส 50% */
+    padding: 10px; /* เพิ่มพื้นที่ภายใน */
+    width: 285px; 
+    position: absolute; /* ให้ popup อยู่ในตำแหน่งที่ถูกต้อง */
+    top: 230px; /* ให้ popup อยู่ใต้ปุ่ม */
+    left: 270px; /* เริ่มจากซ้ายของปุ่ม */
+    z-index: 10; /* ทำให้ popup อยู่เหนือองค์ประกอบอื่น */
+    border-bottom-left-radius: 10px; /* มุมล่างซ้าย */
+    border-bottom-right-radius: 10px; /* มุมล่างขว */
+}
+.popup1 {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+.menu-button1:hover{
+    margin-bottom: 80px;
+}
+
+
+.menu-button2 {
+    margin-left: 450px;
+    margin-bottom: 25px;
+    position: relative; /* ทำให้ปุ่มเป็นตำแหน่งอ้างอิงสำหรับ popup */
+}
+.popup-container2 {
+    background-color: rgba(255, 255, 255, 0.5); /* สีเทาอ่อนที่มีความโปร่งใส 50% */
+    padding: 10px; /* เพิ่มพื้นที่ภายใน */
+    width: 285px; 
+    position: absolute; /* ให้ popup อยู่ในตำแหน่งที่ถูกต้อง */
+    top: 348px; /* ให้ popup อยู่ใต้ปุ่ม */
+    left: 470px; /* เริ่มจากซ้ายของปุ่ม */
+    z-index: 10; /* ทำให้ popup อยู่เหนือองค์ประกอบอื่น */
+    border-bottom-left-radius: 10px; /* มุมล่างซ้าย */
+    border-bottom-right-radius: 10px; /* มุมล่างขว */
+}
+.popup2 {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+.menu-button2:hover{
+    margin-bottom: 80px;
+}
+
+
+.menu-button3 {
+    margin-left: 650px;
+    margin-bottom: 25px;
+    position: relative; /* ทำให้ปุ่มเป็นตำแหน่งอ้างอิงสำหรับ popup */
+}
+.popup-container3 {
+    background-color: rgba(255, 255, 255, 0.5); /* สีเทาอ่อนที่มีความโปร่งใส 50% */
+    padding: 10px; /* เพิ่มพื้นที่ภายใน */
+    width: 285px; 
+    position: absolute; /* ให้ popup อยู่ในตำแหน่งที่ถูกต้อง */
+    top: 465px; /* ให้ popup อยู่ใต้ปุ่ม */
+    left: 670px; /* เริ่มจากซ้ายของปุ่ม */
+    z-index: 10; /* ทำให้ popup อยู่เหนือองค์ประกอบอื่น */
+    border-bottom-left-radius: 10px; /* มุมล่างซ้าย */
+    border-bottom-right-radius: 10px; /* มุมล่างขวา */
+}
+.popup3 {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+.menu-button3:hover{
+    margin-bottom: 80px;
+}
+
+
+.menu-button4 {
+    margin-left: 850px;
+    margin-bottom: 25px;
+    position: relative; /* ทำให้ปุ่มเป็นตำแหน่งอ้างอิงสำหรับ popup */
+}
+.popup-container4 {
+    background-color: rgba(255, 255, 255, 0.5); /* สีเทาอ่อนที่มีความโปร่งใส 50% */
+    padding: 10px; /* เพิ่มพื้นที่ภายใน */
+    width: 285px; 
+    position: absolute; /* ให้ popup อยู่ในตำแหน่งที่ถูกต้อง */
+    top: 582px; /* ให้ popup อยู่ใต้ปุ่ม */
+    left: 870px; /* เริ่มจากซ้ายของปุ่ม */
+    z-index: 10; /* ทำให้ popup อยู่เหนือองค์ประกอบอื่น */
+    border-bottom-left-radius: 10px; /* มุมล่างซ้าย */
+    border-bottom-right-radius: 10px; /* มุมล่างขว */
+}
+.popup4 {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+.menu-button4:hover{
+    margin-bottom: 80px;
 }

@@ -20,23 +20,26 @@ function Projects() {
             <div className="ground">
             <div className="header">
                 <h1>Projects</h1>
-                <i className="fa fa-id-card icon1"></i>
+                <i className="fa fa-solid fa-folder icon1"></i>
             </div>
             <div className="project-content">
                 <div className="project-content-top">
                     <button className="project-button" onClick={goTocom}>
-                        <i className="fa fa-home"></i>
+                        <i class="fa fa-laptop"></i>
                         Computer
                     </button>
                     <button className="project-button" onClick={goTofigma}>
-                        <i className="fa fa-sign-out"></i>
+                        <i class="fa-brands fa-figma"></i>
                         Figma
                     </button>
                 </div>
+                <div className="project-content-bottom">
                 <button className="project-button" onClick={goToHW}>
-                    <i className="fa fa-home"></i>
+                    <i className="fa-solid fa-microchip"></i>
                     Hardware
                 </button>
+                </div>
+                
             </div>
             </div>
         </div>

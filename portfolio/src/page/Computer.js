@@ -20,15 +20,19 @@ function Computer() {
                 <h1>Computer</h1>
                 <i className="fa fa-id-card icon1"></i>
             </div>
-            <button className="project-button" onClick={goToHW}>
-                    <i className="fa fa-home"></i>
-                    Hardware
-                </button>
-                <button className="project-button" onClick={goTofigma}>
-                    <i className="fa fa-home"></i>
-                    Figma
-                </button>
-            </div>
+            <button className="cfh-button1" onClick={goToHW}>
+                <div className="left">
+                    <i class="fa fa-arrow-circle-left"></i>
+                        <span>Hardware</span>
+                </div> 
+            </button>
+            <button className="cfh-button2" onClick={goTofigma}>
+                <div className="right">
+                        <span>Figma</span>
+                        <i className="fa fa-arrow-circle-right"></i>
+                </div>
+            </button>
+        </div>
         </div>
     );
 }
