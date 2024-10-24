@@ -20,6 +20,22 @@ function Hardware() {
                 <h1>Hardware</h1>
                 <i className="fa fa-id-card icon1"></i>
             </div>
+
+            <div className="cfh-project">
+                    <div className="project-1">
+                        <div className="project-14">
+                            <div className="project-15">
+                                <img src="/images/2.png" alt="hardware" className="img-app4"></img>
+                                <p>Counter</p>
+                            </div>
+                            <div className="project-16">
+                                <img src="/images/หม้อแปลง.png" alt="hardware" className="img-app5"></img>
+                                <p>หม้อแปลง</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
             <button className="cfh-button1" onClick={goTofigma}>
                 <div className="left">
                     <i class="fa fa-arrow-circle-left"></i>

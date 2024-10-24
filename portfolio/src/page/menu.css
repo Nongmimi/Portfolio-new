@@ -3,7 +3,10 @@
     width: 100%;
     flex-direction: column;
     height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
-    background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
+    background-image: url(/public/images/15.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .menu p {
@@ -23,8 +26,9 @@
     align-items: center;
     padding: 10px 35px;
     font-size: 23px;
+    font-weight: 500;
     margin: 17px 0;
-    background-color: #000000;
+    background-image: url(/public/images/cover.jpg);
     color: white;
     border-radius: 20px;    
     cursor: pointer; 
@@ -39,7 +43,8 @@
 .menu-button3:hover,
 .menu-button4:hover{
     background-color: #b454da;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 .menu-button1 {

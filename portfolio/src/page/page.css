@@ -8,7 +8,10 @@
     text-align: left;
     width: 100%; /* ใช้พื้นที่เต็มหน้าจอ */
     flex-direction: column;         /* เรียงเนื้อหาในแนวดิ่ง */
-    background-color: rgb(165, 120, 165); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/public/images/15.jpg);
 }
 
 .header {
@@ -36,7 +39,12 @@
     height: 500px;
     position: relative; /* ใช้ position relative */
     border-radius: 30px;
+    transition: transform 0.3s ease;
     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5); /* เพิ่มเงารอบกรอบ */
+}
+
+.about-me-content:hover{
+    transform: scale(1.1); /* ย่อขยายเมื่อ hover */
 }
 .about-me-top {
     display: flex;
@@ -197,7 +205,7 @@
     border-radius: 10px;
 }
 .flipper .front {
-    background-color: #000000; /* สีของด้านหน้า */
+    background-image: url(/public/images/17.jpg);
     font-size: 50px;
     text-align: center;
 }
@@ -300,20 +308,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: transform 0.3s ease; /* เพิ่มการย่อขยายเมื่อ hover */
 }
 .project-button i{
     font-size: 140px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.project-button img {
-    width: 150px; /* กำหนดขนาดของรูปภาพ */
-    height: 150px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 .project-button:hover{
-    background-color: rgb(179, 181, 183);
+    background-image: url(/public/images/17.jpg);
+    transform: scale(1.1);
+    color: #ffffff;
 }
 .cfh-button1 {
     position: fixed;
@@ -354,6 +359,146 @@
 .cfh-button1 i,
 .cfh-button2 span {
     margin-right: 10px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+}
+.cfh-project {
+    display: flex;
+    flex-direction: column;
+}
+.project-1 {
+    display: flex;
+}
+.project-11, .project-12 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.project-img-app1 {
+    margin-left: 230px;
+    width: 210px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* เพิ่มการย่อขยายเมื่อ hover */
+}
+.project-img-app2 {
+    width: 220px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* เพิ่มการย่อขยายเมื่อ hover */
+}
+.project-img-app1:hover , .project-img-app2:hover{
+    transform: scale(1.05); /* ย่อขยายเมื่อ hover */
+}
+.project-info1{
+    margin-left: 20px;
+    width: 290px;
+}
+.project-info2{
+    margin-left: 90px;
+    width: 280px;
+    text-align:end;
+    margin-right: 20px;
+}
+.project-info1 h1, .project-info2 h1  {
+    font-size: 35px;
+}
+.project-info1 p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #302f2f;
+}
+.project-info2 p{
+    margin-right: 10px;
+    font-size: 16px;
+    color: #302f2f;
+}
+.qr-code-container {
+    text-align: center;
+}
+.project-img-qr {
+    margin-top: 20px;
+    width: 120px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+.project-13{
+    margin-left: 220px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.project-img-app3{
+    width: 500px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.project-img-app3:hover{
+    transform: scale(1.05); /* ย่อขยายเมื่อ hover */
+}
+.project-info3{
+    margin-left: 50px;
+}
+.project-info3 h1{
+    font-size: 35px;
+}
+.project-info3 p{
+    margin-left: 30px;
+    font-size: 16px;
+    color: #302f2f;
+}
+.project-img3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.img-app3{
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+.img-app3:hover{
+    transform: scale(3); /* ย่อขยายเมื่อ hover */
+}
+
+
+.project-14{
+    margin-left: 340px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.img-app4{
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.img-app5{
+    width: 400px;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-left: 250px;
+}
+.img-app4:hover, .img-app5:hover{
+    transform: scale(1.2); /* ย่อขยายเมื่อ hover */
+}
+.project-15 p{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-16 p{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
 }
 
 
@@ -412,6 +557,10 @@
 .transcript {
     width: 100%; /* ทำให้รูปภาพขยายเต็มพื้นที่กล่อง */
     height: auto; /* ทำให้สูงอัตโนมัติตามสัดส่วน */
+    transition: transform 0.3s ease;
+}
+.transcript:hover{
+    transform: scale(1.25);
 }
 .flipper_ {
     position: relative;
@@ -426,7 +575,6 @@
     width: 350px; /* ขนาดที่ต้องการ */
     height: 50px; /* ขนาดที่ต้องการ */
 }
-
 .flipper_ .photo-tran-front {
     position: absolute;
     backface-visibility: hidden; /* ซ่อนด้านหลัง */
@@ -437,7 +585,6 @@
     align-items: center;
     border-radius: 10px;
 }
-
 .flipper_ .photo-tran-back {
     position: absolute;
     backface-visibility: hidden; /* ซ่อนด้านหลัง */

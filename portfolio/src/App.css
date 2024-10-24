@@ -1,30 +1,27 @@
+.background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw; /* ทำให้ครอบคลุมเต็มหน้าจอทั้งกว้างและสูง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/public/images/14.jpg);
+}
 .main-container {
   height: 100vh;
-  background-color: rgb(197, 145, 194); /* เปลี่ยนสีพื้นหลังเป็นสีม่วง */
   display: flex;
   flex-direction: row;
 }
-
 .content{
-  font-size: 70px;
+  font-size: 80px;
   margin-left: 150px;
-  /* font-family: "Edu AU VIC WA NT Guides", cursive; */
-  /* font-family: "Londrina Sketch", sans-serif; */
-  /* font-family: "Londrina Shadow", sans-serif; */
   font-family: "Berkshire Swash", serif;
   /* font-family: "Fredericka the Great", serif; */
-  /* font-family: "Rye", serif; */
-  /* font-family: "Love Ya Like A Sister", cursive; */
-  /* font-family: "Spicy Rice", serif; */
-  /* font-family: "Rampart One", sans-serif; */
   /* font-family: "Finger Paint", sans-serif; */
-  /* font-family: "Vast Shadow", serif; */
-  /* font-family: "Henny Penny", system-ui;  good */
-  /* font-family: "Nosifer", sans-serif; */
-  /* font-family: "Caesar Dressing", system-ui; */
   /* font-family: "Rubik Doodle Shadow", system-ui; */
-  /* font-family: "Rubik Vinyl", system-ui; */
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 .main-button{
   width: 500px;
@@ -33,7 +30,7 @@
   border-top-left-radius: 20px;
   margin-left: 886px;
   margin-top: 5px;
-  background-color: #333;
+  background-image: url(/public/images/cover.jpg);
   border-color: #000000;
   border-left-width: 8px;
   border-bottom-width: 5px;
@@ -51,13 +48,13 @@
 
 .barcode{
   font-family: "Libre Barcode 39 Text", system-ui;
-  font-size: 30px;
+  font-size: 35px;
   white-space: nowrap; 
   padding: 20px; 
   position: fixed;
   bottom: 20px; /* ระยะห่างจากขอบล่างของหน้าจอ */
   left: 125px; /* ระยะห่างจากขอบซ้ายของหน้าจอ */
-  color: #3f3f3f;
+  color: rgb(0, 0, 0);
   font-weight: 300;
 }
 
@@ -65,7 +62,7 @@
   position: fixed;               /* ทำให้ sidebar อยู่ทางซ้ายตลอดเวลา */                        /* ติดขอบบน */
   width: 40px;                  /* กำหนดความกว้างของ sidebar */
   height: 100%;                  /* ความสูงเต็มจอ */
-  background-color: #333;         /* สีพื้นหลังของ sidebar */
+  background-image: url(/public/images/cover.jpg);
   padding: 20px;                 /* ระยะห่างภายใน */
   display: flex;
   flex-direction: column;        /* ให้ปุ่มใน sidebar เรียงลงล่าง */
