@@ -29,7 +29,7 @@ function Projects() {
                         Computer
                     </button>
                     <button className="project-button" onClick={goTofigma}>
-                        <i class="fa-brands fa-figma"></i>
+                    <i class="fa-brands fa-figma"></i>
                         Figma
                     </button>
                 </div>

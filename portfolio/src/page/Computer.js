@@ -18,7 +18,7 @@ function Computer() {
             <div className="ground">
             <div className="header">
                 <h1>Computer</h1>
-                <i className="fa fa-id-card icon1"></i>
+                <i class="fa-solid fa-laptop icon1"></i>
             </div>
 
             <div className="cfh-project">

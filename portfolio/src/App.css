@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/public/images/14.jpg);
+  background-image: url(/public/images/old7.jpg);
 }
 .main-container {
   height: 100vh;
@@ -21,7 +21,7 @@
   /* font-family: "Fredericka the Great", serif; */
   /* font-family: "Finger Paint", sans-serif; */
   /* font-family: "Rubik Doodle Shadow", system-ui; */
-  color: rgb(0, 0, 0);
+  color: rgb(202, 202, 202);
 }
 .main-button{
   width: 500px;
@@ -54,7 +54,7 @@
   position: fixed;
   bottom: 20px; /* ระยะห่างจากขอบล่างของหน้าจอ */
   left: 125px; /* ระยะห่างจากขอบซ้ายของหน้าจอ */
-  color: rgb(0, 0, 0);
+  color: rgb(202, 202, 202);
   font-weight: 300;
 }
 

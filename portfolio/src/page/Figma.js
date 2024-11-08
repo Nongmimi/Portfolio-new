@@ -28,7 +28,7 @@ function Figma() {
             <div className="ground">
                 <div className="header">
                     <h1>Figma</h1>
-                    <i className="fa fa-id-card icon1"></i>
+                    <i class="fa-brands fa-figma icon1"></i>
                 </div>
 
                 <div className="cfh-project">

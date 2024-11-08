@@ -18,7 +18,7 @@ function Hardware() {
             <div className="ground">
             <div className="header">
                 <h1>Hardware</h1>
-                <i className="fa fa-id-card icon1"></i>
+                <i className="fa-solid fa-microchip icon1"></i>
             </div>
 
             <div className="cfh-project">
